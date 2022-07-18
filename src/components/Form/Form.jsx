@@ -15,14 +15,12 @@ const Form = ({setArrPatients,  arrPatients , editPatient, setEditPatient }) => 
     if(Object.keys(editPatient).length > 0){
      const {namePatient,nameDoctor, email, discharge, symptoms } = editPatient
      
-      console.log(editPatient)
 
       setNamePatient(namePatient)
       setNameDoctor(nameDoctor)
       setEmail(email)
       setDischarge(discharge)
       setSymptoms(symptoms)
-      console.log("Hay un nuevo paciente")
 
     } 
   }, [editPatient])
@@ -68,7 +66,6 @@ const Form = ({setArrPatients,  arrPatients , editPatient, setEditPatient }) => 
       setDischarge('')
       setSymptoms('')
 
-    console.log('Enviando formulario')
  }
 
  

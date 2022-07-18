@@ -25,7 +25,6 @@ function App() {
   
 
   const deletePatient = id => {
-    console.log("Paciente eliminado", id)
     const patientRefresh = arrPatients.filter(patient => patient.id !== id)
     setArrPatients(patientRefresh)
   }
